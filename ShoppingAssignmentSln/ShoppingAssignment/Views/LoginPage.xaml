@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingAssignment.Views.LoginPage"
+             Title="LoginPage">
+    <ContentPage.Content>
+
+        <Grid ImageSource="wallpaper.jpg">
+            <Grid HorizontalOptions="Center" VerticalOptions="Center" Padding =" 10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row ="0" Grid.Column="0"  Text="User Name" FontSize=" 17" FontAttributes="Italic" TextColor="Black"/>
+            <Frame Grid.Row="1" Grid.Column="0" HeightRequest="60">
+                <Entry TextColor="DeepPink" HeightRequest="58" WidthRequest="200"/>
+
+            </Frame>
+            <Label Grid.Row=" 2" Text=" Password" FontSize="17" FontAttributes="Italic" TextColor="Black"/>
+            <Frame  Grid.Row=" 2" HeightRequest="50">
+
+                <Entry TextColor="DeepPink" HeightRequest="50" WidthRequest="200"/>
+            </Frame>
+
+            <Grid Grid.Row="4" Padding="0,40,0,0 ">
+                <VerticalStackLayout Spacing=" 20">
+                    <Button Text="Login" TextColor="Black" HeightRequest="40" WidthRequest="100" Background="LightPink"/>
+                    <Button Text="Register" TextColor="Black" HeightRequest="40" WidthRequest=" 100" Background="LightPink"/>
+
+                </VerticalStackLayout>
+
+
+            </Grid>
+        </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
