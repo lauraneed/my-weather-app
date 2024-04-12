@@ -226,7 +226,7 @@
                     VerticalOptions="Center" />
                 <Label
                     FontSize="15"
-                    Text="{Binding Sys.Sunset}"
+                   Text="{Binding Sys.Sunset, Converter={StaticResource longToDatetimeConverter}}"
                     TextColor="Black"
                     VerticalOptions="Center" />
             </StackLayout>
@@ -243,7 +243,7 @@
                 BackgroundColor="#7c58c9"
                 CharacterSpacing="7"
                 HorizontalTextAlignment="Center"
-                Text="Karachi"
+                Text="Enter Location"
                 TextColor="White"
                 VerticalOptions="Center"
                 WidthRequest="250" />
